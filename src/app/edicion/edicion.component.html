@@ -1,0 +1,47 @@
+
+<div>
+  <h2>{{miusuario.nombre}} </h2>
+  telefono: {{miusuario.telefono}}
+  <br/>
+  correo: {{miusuario.correo}}
+  <br/>
+  usuario: {{miusuario.usuario}}
+ </div>
+ 
+ <div style="text-align:center"  >
+  <h1>
+    Bienvenido a Twitter!
+    <br/>
+    <img width="150" src="assets/logo.png">
+    <div class="example-container" style="align-items: center">
+        
+      <mat-form-field style="text-align: center">
+        <textarea matInput class="center" [(ngModel)]="miusuario.nombre">></textarea>
+      </mat-form-field>
+    <br/>
+      <mat-form-field style="text-align: center">
+        <textarea matInput class="center"  [(ngModel)]="miusuario.telefono"></textarea>
+      </mat-form-field>
+      <br/>
+      <mat-form-field style="text-align: center">
+        <textarea matInput class="center" [(ngModel)]="miusuario.correo"></textarea>
+      </mat-form-field>
+      <br/>
+      <mat-form-field style="text-align: center">
+        <textarea matInput class="center" [(ngModel)]="miusuario.usuario"></textarea>
+      </mat-form-field>
+      <br/>
+      <mat-form-field style="text-align: center">
+        <mat-select heigth="150" placeholder="Sexo">
+          <mat-option class="center" value="Masculino">Masculino</mat-option>
+          <mat-option class="center" value="Femenino">Femenino</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <ul>
+          <li>
+            <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Confirmar</a></h2>
+          </li>
+      </ul>
+    </div>
+  </h1>
+</div>

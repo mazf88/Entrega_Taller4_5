@@ -1,0 +1,14 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 50%;
+  }
+
+.center { text-align: center;
+align-content: center;
+align-items: center }
+
+.centerLy { align-content: center }
